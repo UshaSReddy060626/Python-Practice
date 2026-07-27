@@ -1,5 +1,3 @@
-# Question 1 - Lists (Mutability)
-
 ## Question
 
 What is the output of the following code?
