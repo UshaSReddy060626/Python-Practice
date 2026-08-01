@@ -1,5 +1,3 @@
-# Question 5 - Medium
-
 ## Question
 
 What is the output of the following code?
