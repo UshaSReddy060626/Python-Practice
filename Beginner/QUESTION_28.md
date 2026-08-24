@@ -9,7 +9,6 @@ data["c"] = 3
 
 print(len(data))
 ```
-
 ## Options
 
 **A.**
