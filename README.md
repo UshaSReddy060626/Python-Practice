@@ -13,7 +13,7 @@ The repository covers Python concepts from **beginner to advanced levels**, with
 - Improve logical thinking and problem-solving skills.
 - Prepare for Python technical interviews.
 - Learn and practice advanced Python concepts.
-- Track my learning progress through GitHub
+- Track my learning progress through GitHub.
 
 ## 📂 Repository Structure
 
