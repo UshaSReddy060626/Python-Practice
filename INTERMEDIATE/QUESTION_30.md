@@ -3,11 +3,12 @@
 What is the output of the following code?
 
 ```python
-numbers = [1, 2, 3, 4, 5]
+a = [1, 2, 3]
+b = [4, 5, 6]
 
-result = list(filter(lambda x: x % 2 == 0, numbers))
+result = zip(a, b)
 
-print(result)
+print(list(result))
 ```
 
 ## Options
@@ -15,19 +16,19 @@ print(result)
 **A.**
 
 ```text
-[1, 3, 5]
+[(1, 4), (2, 5), (3, 6)]
 ```
 
 **B.**
 
 ```text
-[2, 4]
+[[1, 4], [2, 5], [3, 6]]
 ```
 
 **C.**
 
 ```text
-[0, 2, 4]
+[(1, 2, 3), (4, 5, 6)]
 ```
 
 **D.**
@@ -40,41 +41,38 @@ It raises an error.
 
 ## Answer
 
-**Correct Option:** B
+**Correct Option:** A
 
 ### Explanation
 
-The `filter()` function selects elements from an iterable based on a condition.
+The `zip()` function combines corresponding elements from multiple iterables.
 
 Here:
 
 ```python
-lambda x: x % 2 == 0
+a = [1, 2, 3]
+b = [4, 5, 6]
 ```
 
-checks whether each number is even.
-
-From:
+The corresponding elements are paired:
 
 ```text
-1, 2, 3, 4, 5
+1 → 4
+2 → 5
+3 → 6
 ```
 
-the even numbers are:
-
-```text
-2, 4
-```
-
-Therefore:
+So:
 
 ```python
-list(filter(lambda x: x % 2 == 0, numbers))
+list(zip(a, b))
 ```
 
 produces:
 
 ```text
-[2, 4]
+[(1, 4), (2, 5), (3, 6)]
 ```
+
+Each pair is represented as a tuple.
 
