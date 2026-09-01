@@ -1,14 +1,15 @@
+# Question 36 - Intermediate
+
 ## Question
 
 What is the output of the following code?
 
 ```python
-a = [1, 2, 3]
-b = [4, 5, 6]
+numbers = [1, 2, 3, 4, 5]
 
-result = zip(a, b)
+result = list(filter(lambda x: x % 2 == 0, numbers))
 
-print(list(result))
+print(result)
 ```
 
 ## Options
@@ -16,19 +17,19 @@ print(list(result))
 **A.**
 
 ```text
-[(1, 4), (2, 5), (3, 6)]
+[1, 3, 5]
 ```
 
 **B.**
 
 ```text
-[[1, 4], [2, 5], [3, 6]]
+[2, 4]
 ```
 
 **C.**
 
 ```text
-[(1, 2, 3), (4, 5, 6)]
+[0, 2, 4]
 ```
 
 **D.**
@@ -41,38 +42,42 @@ It raises an error.
 
 ## Answer
 
-**Correct Option:** A
+**Correct Option:** B
 
 ### Explanation
 
-The `zip()` function combines corresponding elements from multiple iterables.
+The `filter()` function selects elements from an iterable based on a condition.
 
 Here:
 
 ```python
-a = [1, 2, 3]
-b = [4, 5, 6]
+lambda x: x % 2 == 0
 ```
 
-The corresponding elements are paired:
+checks whether each number is even.
+
+From:
 
 ```text
-1 → 4
-2 → 5
-3 → 6
+1, 2, 3, 4, 5
 ```
 
-So:
+the even numbers are:
+
+```text
+2, 4
+```
+
+Therefore:
 
 ```python
-list(zip(a, b))
+list(filter(lambda x: x % 2 == 0, numbers))
 ```
 
 produces:
 
 ```text
-[(1, 4), (2, 5), (3, 6)]
+[2, 4]
 ```
 
-Each pair is represented as a tuple.
-
+> **Interview Tip:** `filter()` keeps elements for which the given function returns `True`. In Python 3, `filter()` returns an iterator, so `list()` is commonly used to obtain the results as a list.
