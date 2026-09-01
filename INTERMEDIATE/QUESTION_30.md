@@ -1,5 +1,3 @@
-# Question 35 - Intermediate
-
 ## Question
 
 What is the output of the following code?
@@ -78,4 +76,3 @@ produces:
 
 Each pair is represented as a tuple.
 
-> **Interview Tip:** `zip()` stops when the shortest iterable is exhausted. It is commonly used when processing multiple sequences element by element.
