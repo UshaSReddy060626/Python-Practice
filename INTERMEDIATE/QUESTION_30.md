@@ -1,5 +1,3 @@
-# Question 36 - Intermediate
-
 ## Question
 
 What is the output of the following code?
@@ -80,4 +78,3 @@ produces:
 [2, 4]
 ```
 
-> **Interview Tip:** `filter()` keeps elements for which the given function returns `True`. In Python 3, `filter()` returns an iterator, so `list()` is commonly used to obtain the results as a list.
