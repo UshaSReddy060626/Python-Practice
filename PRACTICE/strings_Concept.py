@@ -1,4 +1,5 @@
-#program that takes a sentence from the user and Convert the sentence into lowercase,Split it into words,Count how many words are present,Create a list containing the words whose length is greater than 4,Print the words in reverse order.
+# Program that takes a sentence from the user and Convert the sentence into lowercase,Split it into words,Count how many words are present,Create a list containing the words whose length is greater than 4,Print the words in reverse order.
+
 sentence=input("Enter a Sentence:")
 print(sentence.lower())
 words=sentence.split()
