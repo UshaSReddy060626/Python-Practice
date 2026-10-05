@@ -6,3 +6,4 @@ print(sq)
 numbers = [2, 5, 6, 8, 10]
 result=[number**2 for number in numbers if (number > 5)]
 print(result)
+
