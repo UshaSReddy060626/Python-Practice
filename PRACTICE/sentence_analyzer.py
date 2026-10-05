@@ -10,11 +10,11 @@ lwr=sentence.lower()
 print(lwr)
 words=sentence.split()
 print(words)
-wordlen=[word for word in words if len(word)>4]
-print(wordlen)
-print(len(words))
-print(words[::-1])
 lengths=[len(word) for word in words]
 max_len=max(lengths)
 longest=[word for word in words if len(word)==max_len]
 print(f"The Longest Word in the Sentence is:{longest}")
+wordlen=[word for word in words if len(word)>4]
+print(wordlen)
+print(len(words))
+print(words[::-1])
