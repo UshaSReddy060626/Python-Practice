@@ -92,7 +92,7 @@ A **dictionary** stores data as **key-value pairs**.
 
 ```python
 student = {
-    "name": "Usha",
+    "name": "Aaru",
     "age": 20,
     "marks": 85
 }
@@ -101,7 +101,7 @@ student = {
 Here:
 
 * `name` → key
-* `Usha` → value
+* `Aaru` → value
 
 ### Access Values
 
